@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141414">
+  <meta name="description" content="Delícias do Peixe em Caruaru. Acesse nosso WhatsApp, Instagram, cardápio e localização em um só lugar.">
+  <meta property="og:title" content="Delícias do Peixe · Restaurante">
+  <meta property="og:description" content="Boa comida. Bons encontros. Todos os nossos caminhos em um só lugar.">
+  <meta property="og:type" content="website">
+  <title>Delícias do Peixe · Restaurante</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/peixe-grelhado.jpg" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 3v6a3 3 0 0 0 6 0V3M7 3v18M19 21V3c-4 2-5 6-5 10h5"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20.6 11.7a8.6 8.6 0 0 1-12.8 7.5L3 20.5l1.3-4.7a8.6 8.6 0 1 1 16.3-4.1Z"/><path d="M8 7.5c-.8.6-.6 2.1.2 3.5 1.1 2 2.7 3.4 4.8 4.2 1.3.5 2.5.4 3-.5l.5-1-2.7-1.3-.9 1c-1.5-.5-2.7-1.6-3.2-3l.8-.8L9.2 7.3Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01" stroke-width="3"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V3m-4 4 4-4 4 4M6 11H4v10h16V11h-2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-fish" viewBox="0 0 64 40"><path d="M7 20S19 3 35 7c9 2 15 13 15 13S44 31 35 33C19 37 7 20 7 20Zm43 0 10-10v20L50 20ZM26 8l8-5 7 8M26 32l8 5 7-8M17 13c5 4 5 10 0 14"/><circle cx="28" cy="17" r="1.5" fill="currentColor" stroke="none"/></symbol>
+  </svg>
+  <a class="skip-link" href="#nossos-links">Ir para os links</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="Delícias do Peixe, início"><svg aria-hidden="true"><use href="#i-fish"/></svg><span>DELÍCIAS DO PEIXE<span class="wordmark-caption">RESTAURANTE</span></span></a>
+      <div class="header-right"><span class="header-location">CARUARU, PERNAMBUCO</span><button class="share-button" id="share-button" type="button" aria-label="Compartilhar este site"><svg><use href="#i-share"/></svg></button></div>
+    </header>
+
+    <main class="bio-layout">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-photo" src="assets/peixe-grelhado.jpg" alt="Peixe grelhado com acompanhamentos, em foto ilustrativa" width="1200" height="1800" fetchpriority="high">
+        <div class="hero-shade"></div>
+        <div class="hero-topline"><span>À MESA, A VIDA É MELHOR.</span><svg aria-hidden="true"><use href="#i-fish"/></svg></div>
+        <div class="hero-copy"><span class="eyebrow">SEJA BEM-VINDO</span><h1 id="hero-title">Boa comida.<br>Bons <em>encontros.</em></h1><p>O sabor que faz você querer voltar.</p><div class="hero-bottom"><span>DELÍCIAS DO PEIXE</span><span>CARUARU · PE</span></div></div>
+      </section>
+
+      <section class="links-panel" id="nossos-links" aria-labelledby="restaurant-name">
+        <div class="restaurant-intro">
+          <div class="brand-seal"><img src="assets/marca-original.jpg" alt="Logo do Restaurante Delícias do Peixe" width="828" height="917"></div>
+          <span class="eyebrow intro-eyebrow">SEU PRÓXIMO BOM MOMENTO</span>
+          <h2 id="restaurant-name">Delícias do Peixe<span>Restaurante</span></h2>
+          <p>Um toque. Muitas formas de estar perto.</p>
+        </div>
+
+        <nav class="action-list" aria-label="Links do restaurante">
+          <a class="action action-primary" href="#cardapio" data-config-link="menuUrl" data-pending="menu"><span class="action-icon"><svg><use href="#i-menu"/></svg></span><span class="action-label"><strong>Veja nosso cardápio</strong><span>Seu próximo prato favorito está aqui</span></span><svg class="action-arrow"><use href="#i-arrow"/></svg></a>
+          <a class="action" href="https://wa.me/5581989737144" target="_blank" rel="noopener noreferrer" data-config-link="whatsappUrl"><span class="action-icon"><svg><use href="#i-whatsapp"/></svg></span><span class="action-label"><strong>Vamos de WhatsApp?</strong><span>Pedidos, delivery e aquele alô</span></span><svg class="action-arrow"><use href="#i-arrow"/></svg></a>
+          <a class="action" href="https://www.instagram.com/restaurante.deliciasdopeixe/" target="_blank" rel="noopener noreferrer" data-config-link="instagramUrl"><span class="action-icon"><svg><use href="#i-instagram"/></svg></span><span class="action-label"><strong>Siga no Instagram</strong><span>Um gostinho do que acontece por aqui</span></span><svg class="action-arrow"><use href="#i-arrow"/></svg></a>
+          <a class="action" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante+Delicias+do+Peixe+Av+Joao+Soares+de+Lira+1688+Caruaru" target="_blank" rel="noopener noreferrer" data-config-link="mapsUrl"><span class="action-icon"><svg><use href="#i-pin"/></svg></span><span class="action-label"><strong>Encontre nossa mesa</strong><span>Veja a localização e como chegar</span></span><svg class="action-arrow"><use href="#i-arrow"/></svg></a>
+          <a class="action" href="#avaliacao" data-config-link="googleReviewUrl" data-pending="review"><span class="action-icon"><svg><use href="#i-star"/></svg></span><span class="action-label"><strong>Foi bom ter você aqui</strong><span>Conte sua experiência no Google</span></span><svg class="action-arrow"><use href="#i-arrow"/></svg></a>
+        </nav>
+
+        <div class="visit-note"><svg aria-hidden="true"><use href="#i-clock"/></svg><p>Esperamos por você.<span>Segunda-feira é nosso dia de descanso.</span></p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Av. João Soares de Lira, 1688 · Divinópolis<br class="mobile-break"> · Caruaru, PE</span></p><span class="footer-signature">FEITO PARA COMPARTILHAR BONS MOMENTOS <span aria-hidden="true">↗</span></span></footer>
+  </div>
+
+  <dialog class="info-dialog" id="info-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description"><button class="dialog-close" id="dialog-close" type="button" aria-label="Fechar">×</button><svg class="dialog-icon" aria-hidden="true"><use id="dialog-icon" href="#i-menu"/></svg><span class="eyebrow">DELÍCIAS DO PEIXE</span><h2 id="dialog-title"></h2><p id="dialog-description"></p><a class="dialog-cta" data-config-link="whatsappUrl" href="https://wa.me/5581989737144" target="_blank" rel="noopener noreferrer">Falar no WhatsApp <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

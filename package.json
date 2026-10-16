@@ -1,0 +1,13 @@
+{
+  "name": "delicias-do-peixe-bio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bio-site em HTML, CSS e JavaScript puro",
+  "scripts": {
+    "dev": "node serve.mjs",
+    "start": "node serve.mjs",
+    "build": "node build.mjs",
+    "check": "node --check config.js && node --check script.js"
+  }
+}
