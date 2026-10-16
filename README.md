@@ -13,11 +13,15 @@ googleReviewUrl: "https://seu-link-de-avaliacao-do-google.com",
 
 `menuUrl` aceita um link público para PDF, imagem ou plataforma de cardápio. Para usar PDF local, salve-o em `assets/cardapio.pdf` e coloque a **URL pública completa**, como `https://seudominio.com/assets/cardapio.pdf`. O arquivo será incluído ao gerar a pasta `dist`.
 
-`googleReviewUrl` deve receber o link de solicitar avaliações da ficha do restaurante no Google. Os exemplos acima são ilustrativos: substitua pelos links reais.
+`googleReviewUrl` já está preenchido com o link de avaliação enviado pelo restaurante. O exemplo acima mostra como alterá-lo futuramente.
 
 Enquanto esses campos estiverem vazios, os botões abrem uma janela explicando a disponibilidade e oferecendo contato pelo WhatsApp. Ao preencher uma URL válida, o botão abre o destino automaticamente. Não precisa editar HTML ou JavaScript.
 
-WhatsApp, Instagram e Google Maps também estão centralizados em `config.js`. Telefone e endereço vieram das referências enviadas. O endereço também consta no [portal de turismo de Caruaru](https://conheca.caruaru.pe.gov.br/onde-comer/restaurante). A observação de segunda-feira veio da captura do Instagram; outros horários não foram presumidos.
+WhatsApp, Instagram e Google Maps também estão centralizados em `config.js`. Telefone e endereço vieram das referências enviadas. O endereço também consta no [portal de turismo de Caruaru](https://conheca.caruaru.pe.gov.br/onde-comer/restaurante). Horários confirmados pelo restaurante: terça a domingo, das 11:00 às 16:00; segunda-feira fechado.
+
+## Alterar os horários
+
+Edite `openingHours` em `config.js`. Os campos `days`, `time` e `closed` atualizam os textos no topo, na localização, no FAQ e no rodapé. O HTML também contém os horários confirmados para exibição sem JavaScript. Se mudar o horário futuramente, mantenha esse conteúdo de fallback atualizado.
 
 ## Trocar os pratos em destaque
 
@@ -40,7 +44,7 @@ As três imagens de exemplo foram geradas com a ferramenta nativa de imagens, co
 ## Mapa, FAQ e avaliação
 
 - `mapEmbedUrl` em `config.js`: URL usada pelo iframe. Aceita o link de incorporação do Google Maps.
-- `directionsUrl`: destino do botão de traçar rota. `mapsUrl`: botão de abrir no Google Maps.
+- `directionsUrl`: destino do botão “Como chegar pelo Google Maps”, vinculado ao identificador do restaurante. `mapsUrl`: link de busca no Google Maps, disponível para futuras referências.
 - `googleReviewUrl`: botão principal da seção de avaliação. Enquanto vazio, mostra o aviso e oferece WhatsApp. As estrelas são decorativas, sem representar uma nota real.
 - FAQ: perguntas e respostas em `index.html`, na seção `id="duvidas"`. Os blocos usam `<details>` e funcionam sem JavaScript.
 - Localização e avaliação no topo navegam para as seções da própria página.

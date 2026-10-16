@@ -53,9 +53,16 @@
     card.append(photo, body);
     dishesGrid.append(card);
   });
-  document.querySelector("#dish-demo-note").hidden = !dishes.some(dish => dish.example);
+  const demoNote = document.querySelector("#dish-demo-note");
+  if (demoNote) demoNote.hidden = !dishes.some(dish => dish.example);
   if (validUrl(config.mapEmbedUrl)) document.querySelector("#restaurant-map").src = config.mapEmbedUrl;
   document.querySelectorAll("[data-review-status]").forEach(note => { note.hidden = validUrl(config.googleReviewUrl); });
+  const hours = config.openingHours || {};
+  for (const key of ["days", "time", "closed"]) {
+    if (typeof hours[key] === "string" && hours[key].trim()) {
+      document.querySelectorAll(`[data-hours-${key}]`).forEach(label => { label.textContent = hours[key]; });
+    }
+  }
 
   document.querySelectorAll("[data-config-link]").forEach(link => {
     const url = config[link.dataset.configLink];

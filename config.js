@@ -7,12 +7,19 @@ window.RESTAURANT_CONFIG = {
   menuUrl: "",
 
   // AVALIAÇÃO: cole o link “Solicitar avaliações” do Perfil da Empresa no Google.
-  googleReviewUrl: "",
+  googleReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJYR8DkECPqQcRa7LfslAfRUw",
+
+  // HORÁRIOS: uma única configuração atualiza topo, localização, FAQ e rodapé.
+  openingHours: {
+    days: "Terça a domingo",
+    time: "11:00 às 16:00",
+    closed: "Segunda-feira: fechado"
+  },
 
   whatsappUrl: "https://wa.me/5581989737144?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs.",
   instagramUrl: "https://www.instagram.com/restaurante.deliciasdopeixe/",
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=Restaurante+Delicias+do+Peixe+Av+Joao+Soares+de+Lira+1688+Caruaru",
-  directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Restaurante+Delicias+do+Peixe+Av+Joao+Soares+de+Lira+1688+Caruaru",
+  directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Restaurante+Delicias+do+Peixe&destination_place_id=ChIJYR8DkECPqQcRa7LfslAfRUw",
   // MAPA: URL de incorporação (iframe) do Google Maps, não o link de compartilhar.
   mapEmbedUrl: "https://www.google.com/maps?q=Restaurante+Delicias+do+Peixe+Av+Joao+Soares+de+Lira+1688+Caruaru&z=16&output=embed",
 
