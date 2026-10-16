@@ -55,7 +55,7 @@
 .solid-button:hover{background:#363732}
 .solid-button svg{width:16px;height:16px}
 .map-panel{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#e8e8e2}
-.map-panel iframe{display:block;border:0;width:100%;height:365px;filter:grayscale(1)}
+.map-panel iframe{display:block;border:0;width:100%;height:365px}
 .map-caption{background:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:19px}
 .map-caption>span{font-size:7px;letter-spacing:1.5px;color:var(--muted)}
 .map-caption>a{display:flex;align-items:center;gap:10px;font-size:9px}
