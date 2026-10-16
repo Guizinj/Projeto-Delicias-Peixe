@@ -44,7 +44,7 @@ Publique o conteúdo da pasta `dist/` em uma hospedagem estática com HTTPS. Dep
 - `style.css`: tema preto e branco, layout responsivo e movimento reduzido.
 - `config.js`: links editáveis.
 - `script.js`: janelas, configuração dos links e compartilhamento.
-- `assets/marca-original.jpg`: imagem enviada, exibida em preto e branco via CSS.
-- `assets/peixe-grelhado.jpg`: foto **ilustrativa**, não representa um prato real do restaurante. [Fonte: Unsplash](https://images.unsplash.com/photo-1467003909585-2f8a72700288). Substitua por uma foto própria para a versão final, se desejar.
+- `assets/marca-original.jpg`: imagem enviada, exibida nas cores originais.
+- `assets/peixe-frito-limpo.png`: foto enviada pelo usuário, tratada pela ferramenta de edição de imagens para remover textos, preços, botão e bordas. O prato e as cores foram preservados; a foto e a logo são as exceções ao tema preto e branco.
 
 Não há bibliotecas, rastreadores, cookies ou cadastro. O site funciona sem JavaScript para os links básicos; cardápio e avaliação pendentes e o compartilhamento usam JavaScript.
