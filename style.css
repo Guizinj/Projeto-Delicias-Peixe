@@ -7,10 +7,8 @@
 @media(max-width:360px){.page-shell{padding-left:16px;padding-right:16px}.hero h1{font-size:35px}.action{gap:10px;padding-left:13px;padding-right:13px}.action-label>span{font-size:9px}.restaurant-intro h2{font-size:30px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
-/* Backdrop suave entre a foto e os textos do hero, em todas as telas. */
-.hero-copy{isolation:isolate;z-index:1}
-.hero-copy::before{content:"";position:absolute;inset:-24px 0 0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(0,0,0,.56) 32%,rgba(0,0,0,.8));-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%);mask-image:linear-gradient(180deg,transparent,#000 30%)}
-.hero h1{text-shadow:0 2px 16px rgba(0,0,0,.35)}
+/* Overlay leve sobre toda a foto, sem faixa ou desfoque localizado. */
+.hero-shade{background:linear-gradient(180deg,rgba(0,0,0,.22),rgba(0,0,0,.28) 45%,rgba(0,0,0,.52));pointer-events:none}
 
 /* Seções de descoberta: fotos coloridas, interface em preto e branco. */
 [id]{scroll-margin-top:28px}
