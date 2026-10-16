@@ -19,7 +19,33 @@ Enquanto esses campos estiverem vazios, os botões abrem uma janela explicando a
 
 WhatsApp, Instagram e Google Maps também estão centralizados em `config.js`. Telefone e endereço vieram das referências enviadas. O endereço também consta no [portal de turismo de Caruaru](https://conheca.caruaru.pe.gov.br/onde-comer/restaurante). A observação de segunda-feira veio da captura do Instagram; outros horários não foram presumidos.
 
-## Visualizar
+## Trocar os pratos em destaque
+
+Abra **[config.js](config.js)** e procure `dishes`. Cada objeto corresponde a um cartão, na ordem em que aparece no site:
+
+```js
+{
+  name: "Nome do prato real",
+  description: "Descrição curta do prato e dos acompanhamentos.",
+  image: "assets/foto-do-prato.jpg",
+  alt: "Descrição da foto para acessibilidade",
+  example: false
+}
+```
+
+Coloque a foto em `assets/` e atualize `image`. Substitua os três exemplos fictícios (moqueca, camarão e filé crocante) pelos pratos reais. Mude `example: true` para `example: false` quando o conteúdo corresponder ao prato real, para remover o selo de exemplo. O aviso geral desaparece quando não houver exemplos. Não foram presumidos preços ou tamanhos de porção.
+
+As três imagens de exemplo foram geradas com a ferramenta nativa de imagens, com prompts de fotografia realista de moqueca de peixe, camarão ao alho e óleo e filé de peixe empanado, em pratos escuros e cores naturais. Arquivos: `assets/moqueca-exemplo.png`, `assets/camarao-exemplo.png` e `assets/file-peixe-exemplo.png`.
+
+## Mapa, FAQ e avaliação
+
+- `mapEmbedUrl` em `config.js`: URL usada pelo iframe. Aceita o link de incorporação do Google Maps.
+- `directionsUrl`: destino do botão de traçar rota. `mapsUrl`: botão de abrir no Google Maps.
+- `googleReviewUrl`: botão principal da seção de avaliação. Enquanto vazio, mostra o aviso e oferece WhatsApp. As estrelas são decorativas, sem representar uma nota real.
+- FAQ: perguntas e respostas em `index.html`, na seção `id="duvidas"`. Os blocos usam `<details>` e funcionam sem JavaScript.
+- Localização e avaliação no topo navegam para as seções da própria página.
+
+## Visualizar o site
 
 Abra `index.html` diretamente no navegador ou, com Node.js instalado, execute:
 

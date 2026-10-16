@@ -13,6 +13,50 @@
     catch { return false; }
   }
 
+  // Textos entram como textContent; a configuração nunca vira HTML executável.
+  const dishesGrid = document.querySelector("#dishes-grid");
+  const dishes = Array.isArray(config.dishes) ? config.dishes : [];
+  dishes.forEach((dish, index) => {
+    const card = document.createElement("article");
+    card.className = "dish-card";
+    const photo = document.createElement("div");
+    photo.className = "dish-image-wrap";
+    const image = document.createElement("img");
+    image.className = "dish-photo";
+    // Fotos podem ser locais ou URLs HTTP(S), sem esquemas executáveis.
+    try {
+      const source = new URL(dish.image, window.location.href);
+      if (["http:", "https:", "file:"].includes(source.protocol)) image.src = source.href;
+    } catch { /* Configuração sem foto válida: mantém o fundo do cartão. */ }
+    image.alt = dish.alt || dish.name || "Prato do restaurante";
+    image.loading = "lazy";
+    image.width = 640;
+    image.height = 640;
+    image.addEventListener("error", () => { image.hidden = true; });
+    photo.append(image);
+    if (dish.example) {
+      const badge = document.createElement("span");
+      badge.className = "dish-badge";
+      badge.textContent = "Exemplo ilustrativo";
+      photo.append(badge);
+    }
+    const body = document.createElement("div");
+    body.className = "dish-body";
+    const number = document.createElement("span");
+    number.className = "dish-number";
+    number.textContent = String(index + 1).padStart(2, "0");
+    const heading = document.createElement("h3");
+    heading.textContent = dish.name;
+    const text = document.createElement("p");
+    text.textContent = dish.description;
+    body.append(number, heading, text);
+    card.append(photo, body);
+    dishesGrid.append(card);
+  });
+  document.querySelector("#dish-demo-note").hidden = !dishes.some(dish => dish.example);
+  if (validUrl(config.mapEmbedUrl)) document.querySelector("#restaurant-map").src = config.mapEmbedUrl;
+  document.querySelectorAll("[data-review-status]").forEach(note => { note.hidden = validUrl(config.googleReviewUrl); });
+
   document.querySelectorAll("[data-config-link]").forEach(link => {
     const url = config[link.dataset.configLink];
     if (validUrl(url)) {

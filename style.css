@@ -6,3 +6,78 @@
 @media(max-width:760px){.page-shell{padding:0 22px;max-width:560px}.site-header{height:77px}.wordmark{font-size:9px;letter-spacing:1.2px;gap:9px}.wordmark>svg{width:38px}.wordmark-caption{font-size:6px;letter-spacing:2.6px;margin-top:4px}.header-location{display:none}.share-button{width:35px;height:35px}.bio-layout{display:flex;flex-direction:column;gap:0;padding:20px 0 28px}.hero{min-height:274px;border-radius:5px}.hero-photo{object-position:50% 56%}.hero-topline{top:18px;left:20px;right:20px}.hero-topline>span{font-size:6px;letter-spacing:1.7px}.hero-topline svg{width:33px;height:23px}.hero-copy{padding:0 22px 46px}.hero .eyebrow{font-size:6px;letter-spacing:1.6px}.hero h1{font-size:40px;line-height:1.04;letter-spacing:-1.4px;margin:13px 0 10px}.hero-copy>p{font-size:9px;margin:0}.hero-bottom{display:none}.hero-shade{background:linear-gradient(180deg,#0005,transparent 25%,#0003 35%,#000d 100%)}.links-panel{max-width:440px;padding-top:0}.restaurant-intro{position:relative;padding-top:56px}.brand-seal{position:absolute;top:-29px;left:50%;transform:translateX(-50%);width:66px;height:66px;margin:0;box-shadow:0 0 0 5px var(--paper),0 0 0 6px var(--line)}.intro-eyebrow{font-size:6px;letter-spacing:1.8px}.restaurant-intro h2{font-size:33px;margin-top:11px}.restaurant-intro h2 span{font-size:7px;margin-top:9px;letter-spacing:3px}.restaurant-intro>p{font-size:10px;margin:15px 0 23px}.action{min-height:73px;padding:14px 17px;gap:15px}.action-label strong{font-size:12px}.action-label>span{font-size:10px}.action-list{gap:9px}.visit-note{margin-top:23px}.site-footer{flex-direction:column;gap:20px;text-align:center;padding:23px 0 26px}.site-footer>p{font-size:9px;justify-content:center}.site-footer svg{align-self:flex-start;margin-top:1px}.footer-signature{font-size:6px;letter-spacing:1.1px}.mobile-break{display:block}.footer-signature>span{font-size:12px;margin-left:5px}}
 @media(max-width:360px){.page-shell{padding-left:16px;padding-right:16px}.hero h1{font-size:35px}.action{gap:10px;padding-left:13px;padding-right:13px}.action-label>span{font-size:9px}.restaurant-intro h2{font-size:30px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Seções de descoberta: fotos coloridas, interface em preto e branco. */
+[id]{scroll-margin-top:28px}
+.section-nav{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0}
+.section-nav>span{font-size:8px;letter-spacing:1.8px;color:var(--muted)}
+.section-nav>div{display:flex;gap:32px;align-items:center}
+.section-nav a{font-size:11px;padding:8px 0}
+.section-nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.section-nav a span{margin-left:6px}
+.content-section{padding:72px 0;border-bottom:1px solid var(--line)}
+.section-eyebrow{color:var(--muted);font-size:8px;letter-spacing:1.8px}
+.content-section h2,.review-section h2{font:400 48px/1.08 var(--serif);letter-spacing:-1.8px;margin:20px 0}
+.content-section h2 em,.review-section h2 em{font-weight:400}
+.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:30px}
+.section-heading h2{margin-bottom:0}
+.section-heading>p,.location-copy>p,.faq-intro>p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.dishes-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.dish-card{min-width:0}
+.dish-image-wrap{position:relative;aspect-ratio:1/1.06;overflow:hidden;border-radius:5px;background:#e8e8e2}
+.dish-photo{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.dish-card:hover .dish-photo{transform:scale(1.035)}
+.dish-badge{position:absolute;bottom:12px;left:12px;background:#fffef8ed;color:var(--ink);padding:7px 10px;border-radius:3px;font-size:8px;letter-spacing:.2px}
+.dish-body{padding:20px 1px 0}
+.dish-number{font-size:8px;color:var(--muted);letter-spacing:1px}
+.dish-body h3{font:400 25px/1.12 var(--serif);letter-spacing:-.6px;margin:10px 0}
+.dish-body p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}
+.dishes-bottom{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:32px}
+.dishes-bottom>p{max-width:620px;font-size:10px;line-height:1.7;color:var(--muted);margin:0}
+.dishes-bottom>p span{color:var(--ink);padding-right:4px}
+.text-link{font-size:11px;display:inline-flex;align-items:center;gap:14px;white-space:nowrap;padding:10px 0;border-bottom:1px solid var(--ink)}
+.text-link svg{width:16px;height:16px}
+.text-link:hover{opacity:.65}
+.location-section{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px;align-items:center}
+.location-copy address{font-style:normal;display:flex;gap:14px;align-items:flex-start;font-size:12px;line-height:1.9;margin:28px 0 18px}
+.location-copy address svg{width:19px;height:19px;margin-top:3px}
+.location-copy address strong{display:block;font-size:13px;margin-bottom:5px;font-weight:600}
+.location-note{display:flex;align-items:center;gap:14px;font-size:10px;line-height:1.8;color:var(--muted);margin-bottom:26px}
+.location-note svg{width:18px;height:18px}
+.solid-button{display:inline-flex;justify-content:center;align-items:center;gap:26px;min-height:49px;padding:15px 22px;border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:5px;font-size:11px;transition:background .2s}
+.solid-button:hover{background:#363732}
+.solid-button svg{width:16px;height:16px}
+.map-panel{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#e8e8e2}
+.map-panel iframe{display:block;border:0;width:100%;height:365px;filter:grayscale(1)}
+.map-caption{background:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:19px}
+.map-caption>span{font-size:7px;letter-spacing:1.5px;color:var(--muted)}
+.map-caption>a{display:flex;align-items:center;gap:10px;font-size:9px}
+.map-caption svg{width:14px;height:14px}
+.faq-section{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px}
+.faq-intro h2{max-width:310px}
+.faq-intro>.text-link{margin-top:23px}
+.faq-list{border-top:1px solid var(--line)}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:73px;padding:20px 0;font-size:13px;font-weight:500}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary>span{display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;width:25px;height:25px;flex-shrink:0;font-size:18px;font-weight:300;transition:transform .2s}
+.faq-list details[open] summary>span{transform:rotate(45deg)}
+.faq-list details>p{font-size:12px;line-height:1.9;color:var(--muted);margin:0;padding:0 35px 24px 0}
+.faq-list details a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.review-section{background:var(--ink);color:white;border-radius:6px;padding:56px;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:64px;margin:64px 0}
+.review-copy>.eyebrow{font-size:7px;color:#c3c4bd;letter-spacing:1.6px}
+.review-stars{display:flex;gap:6px;margin:29px 0}
+.review-stars svg{width:20px;height:20px;stroke-width:1}
+.review-section h2{font-size:39px;letter-spacing:-1.3px}
+.review-copy>p{max-width:410px;color:#c3c4bd;font-size:12px;line-height:1.9;margin-bottom:0}
+.review-invite{background:var(--paper);color:var(--ink);border-radius:5px;padding:30px;text-align:center}
+.review-google{font:600 32px/1 var(--sans);display:flex;align-items:center;justify-content:center;gap:12px}
+.review-google>span{font:500 7px/1.5 var(--sans);letter-spacing:1.6px;max-width:90px;text-align:left}
+.review-invite h3{font:400 28px/1.15 var(--serif);letter-spacing:-.8px;margin:22px 0 12px}
+.review-invite>p{font-size:11px;line-height:1.9;color:var(--muted);margin:0}
+.review-invite>.solid-button{display:flex;margin-top:23px}
+.review-invite>small{display:block;font-size:9px;color:var(--muted);line-height:1.6;margin-top:12px}
+.review-invite>small[hidden]{display:none}
+.review-thanks{display:block;font-size:8px;color:var(--muted);padding-top:20px;margin-top:20px;border-top:1px solid var(--line)}
+@media(max-width:1100px){.location-section,.faq-section{gap:40px}.dishes-grid{gap:16px}.dish-body h3{font-size:22px}.review-section{padding:36px;gap:32px}.review-section h2{font-size:34px}.review-invite{padding:25px}.section-nav>div{gap:22px}}
+@media(max-width:760px){[id]{scroll-margin-top:20px}.section-nav{display:block;padding:18px 0 12px}.section-nav>span{font-size:6px;letter-spacing:1.5px}.section-nav>div{justify-content:space-between;gap:8px;margin-top:7px}.section-nav a{font-size:9px}.content-section{padding:43px 0}.section-eyebrow{font-size:6px;letter-spacing:1.4px}.content-section h2{font-size:35px;letter-spacing:-1.1px;margin:16px 0}.section-heading{display:block;margin-bottom:23px}.section-heading>p{font-size:11px;margin-top:15px}.dishes-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 14px}.dish-image-wrap{aspect-ratio:1/1.1}.dish-badge{font-size:6px;left:7px;bottom:7px;padding:6px 7px}.dish-body{padding-top:13px}.dish-body h3{font-size:21px;margin:8px 0}.dish-body p{font-size:10px;line-height:1.7}.dish-number{font-size:7px}.dishes-bottom{flex-direction:column;align-items:flex-start;gap:16px;margin-top:25px}.dishes-bottom>p{font-size:9px}.text-link{font-size:10px}.location-section,.faq-section{grid-template-columns:1fr;gap:28px}.location-copy>p,.faq-intro>p{font-size:12px}.location-copy address{font-size:11px;margin-top:22px}.location-note{font-size:10px}.location-copy>.solid-button{width:100%}.map-panel iframe{height:290px}.map-caption{padding:16px 12px}.map-caption>span{font-size:6px;letter-spacing:.8px}.map-caption>a{font-size:8px;gap:6px}.faq-intro h2{max-width:260px}.faq-intro>.text-link{margin-top:12px}.faq-list summary{font-size:12px;min-height:66px}.faq-list details>p{font-size:11px;padding-right:12px}.review-section{grid-template-columns:1fr;gap:28px;padding:29px 22px;margin:40px 0}.review-copy>.eyebrow{font-size:6px;letter-spacing:1.2px}.review-stars{margin:23px 0}.review-stars svg{width:17px;height:17px}.review-section h2{font-size:31px}.review-copy>p{font-size:11px}.review-invite{padding:25px 18px}.review-invite h3{font-size:27px}.review-invite>.solid-button{font-size:10px;gap:14px}}
